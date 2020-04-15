@@ -238,10 +238,10 @@ def cleanup_function(**context):
             str(entry.__dict__[str(age_check_column).split(".")[1]])
         )
 
-    logging.info(
-        "Process will be Deleting " + str(len(entries_to_delete)) + " " +
-        str(airflow_db_model.__name__) + "(s)"
-    )
+    #logging.info(
+    #    "Process will be Deleting " + str(len(entries_to_delete)) + " " +
+    #    str(airflow_db_model.__name__) + "(s)"
+    #)
 
     if ENABLE_DELETE:
         logging.info("Performing Delete...")
